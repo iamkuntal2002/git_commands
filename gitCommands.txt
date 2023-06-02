@@ -1,0 +1,47 @@
+git config --global user.name "kuntal"		//to set the user name globally in your system
+git config --global user.email "iamkuntal2002@gmail.com"	//to set the user email globally in your system
+git config --list	//to see the config list
+
+git init	//to initialize git on that folder
+
+git status 	//to see the current status of the files present in that folder
+
+git add filename	//to add the specified file in staging area
+git add -A 		//to add all the files in staging area
+			(staging area means, the files which are ready to commit)
+git commit -m "comment"		//to commit all the files present in staging area
+
+
+if a file is modifies then you can check by
+"git status" command and you can rollback to previous version then use 
+"git checkout filename" command
+
+to check what had been changed in a particular file then use 
+"git diff" command
+
+git diff --staged		//to see the changes in staging area
+
+git show 		//to see some information about who commit the files etc
+
+git log		//to see which file is commited by whom and the time of commit
+
+git rm filename		//to remove a file 
+git rm --cached filename	//to remove a file which is in staging area(staging area to unstaging area)
+
+
+git branch --list 		//to see how many branches are present
+git branch branch_name 		//to create a branch
+git checkout branch_name 	//to switch to specified branch
+(the files are present at the particular branch, they cannot be seem from another branch untill they are merged)
+git merge branch_name		//to merge the specified branch with the currently active branch
+git branch -d branch_name 	//to delete a branch
+git branch -M new_name		//to rename the currently active branch
+
+git remote add origin githumRepoUrl		//to add the github url to remote git
+git push -u origin main		//to push all the files in github(main is the branch name and the branch name must be named "main")
+(if some files are added, the to push the files, add the files -> commit the files -> push the files)
+(after pushing the files from main branch if you want to push some files from another branch
+git push -u origin branch	(then the current branch also be pushed in github)
+
+
+git clone cloneUrl		//to clone the files from github
