@@ -45,3 +45,4 @@ git push -u origin branch	(then the current branch also be pushed in github)
 git remote rm origin		//to remove a origin url
 
 git clone cloneUrl		//to clone the files from github
+
