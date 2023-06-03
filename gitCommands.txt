@@ -1,4 +1,4 @@
-git config --global user.name "kuntal"		//to set the user name globally in your system
+ git config --global user.name "kuntal"		//to set the user name globally in your system
 git config --global user.email "iamkuntal2002@gmail.com"	//to set the user email globally in your system
 git config --list	//to see the config list
 
@@ -42,6 +42,6 @@ git push -u origin main		//to push all the files in github(main is the branch na
 (if some files are added, the to push the files, add the files -> commit the files -> push the files)
 (after pushing the files from main branch if you want to push some files from another branch
 git push -u origin branch	(then the current branch also be pushed in github)
-
+git remote rm origin		//to remove a origin url
 
 git clone cloneUrl		//to clone the files from github
