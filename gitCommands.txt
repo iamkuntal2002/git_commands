@@ -43,6 +43,7 @@ git push -u origin main		//to push all the files in github(main is the branch na
 (after pushing the files from main branch if you want to push some files from another branch
 git push -u origin branch	(then the current branch also be pushed in github)
 git remote rm origin		//to remove a origin url
+git remote set-url origin newURL	//to set a new origin url
 
 git clone cloneUrl		//to clone the files from github
 
